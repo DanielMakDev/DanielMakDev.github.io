@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Баннер</title>
+	<meta charset="utf-8">
+	<meta name="candy.size" content="width=680,height=120">
+</head>
+<body>
+<style type="text/css">
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}	
+.candy_html{
+		border: 1px solid #fff;
+		max-width: 1260px;
+        width: 100%;
+		height: 120px;
+		overflow-y: hidden;	
+	}
+.flex-line-one{
+	display: flex;
+	justify-content: space-between;
+}
+.box-one{
+	width: 50%;
+	overflow-y: hidden;	
+	
+
+}
+.box-two{
+	overflow-y: hidden;	
+	width: 50%;
+    height: 120px;
+}
+
+.section-left-1{
+	display: flex;
+	width: 420px;
+	margin-left: 2px;
+	margin-top: 15px;
+}
+.section-left-2{
+	width: 400px;
+	margin-left: 5px;
+	margin-top: 20px;
+}
+.section-left-3{
+	width: 400px;
+	margin-left: 5px;
+	margin-top: 20px;
+}
+.section-left-4{
+	width: 400px;
+	margin-left: 5px;
+	margin-top: 20px;
+}
+#logo{
+	width: 85px;
+	height: 75px;
+	transform: translateY(120px);
+}
+#micro{
+	margin-top: 10px; 
+	width: 85px;
+	margin-left: 5px;
+	transform: translateY(100px);
+}
+#line_undo{
+	transform: translateY(80px); 
+	margin-left: 9px;
+}
+#text_undo{
+	transform: translateY(80px);
+	margin-left: 9px;
+}
+#text_undo_2{
+	transform: translateY(80px);
+	margin-left: 9px;
+}
+#text_october{
+	z-index: 10;
+}
+#text_bottom{
+	margin-left: 10px;
+	transform: translateY(60px); 
+	z-index: -5;
+}
+#devoch{
+	margin-left: 25px;
+	margin-top: -10px;
+	transform: translateY(60px); 
+	z-index: 10;
+}
+#text_boy{
+	z-index: -5;
+}
+.house-1{
+    width: calc(100% - 10px);
+    float: right;
+	margin-left: 110px;
+    height: inherit;
+}
+#houses{
+	transform: translateY(250px);
+    float: right;
+	z-index: -5
+}
+.house-2{
+    width: 100%;
+    height: inherit;
+    float: right;
+	margin-left: -50px;
+	margin-top: 6px;
+	z-index: 10;
+}
+#houses_2{
+    width: 100%;
+    float: right;
+	margin-left: -50px;
+	z-index: 10;
+	margin-top: 0px;
+}
+#number{
+	z-index: -10;
+}
+#sayt{
+	z-index: 10;
+	margin-left: 30px;
+	margin-top: -12px;
+    transform: translateY(60px); 
+}
+
+.house-2.trans{
+    transition: 1.4s;
+    transform: translateY(-200%);
+}
+
+@media (max-width: 800px) {
+    #houses {
+        width: 90%;
+        margin-top: -20px;
+        min-height: calc(100% + 20px);
+        height: auto;
+    }
+    .house-2.trans{
+        transform: translateY(-130%);
+    }
+}
+@media (min-width: 800px) {
+    .box-one .section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+    #houses {
+        width: 90%;
+        margin-top: -20%;
+    }
+    
+    .house-2{
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .house-2{
+        margin-top: 0;
+    }
+}
+
+</style>
+<a href="%urls_1%" target="_blank" id="urls_1">
+<div class="candy_html">
+	<div class="flex-line-one">
+	 <div class="box-one">
+	 <div class="section section-left-1">
+		<img src="img/part_1.png" id="logo">
+		<div class="box-in">
+			<img src="img/part_2.png" id="micro"><br>
+			<img src="img/part_4_ln.png" id="line_undo">
+			<img src="img/nades.png" id="text_undo">
+			<img src="img/poles.png" id="text_undo_2">
+		</div>
+	</div>
+	<div class="section section-left-2">
+		<img src="img/top_text.png" id="text_october"><br>
+		<img src="img/bottom_text.png" id="text_bottom">
+	</div>
+	<div class="section section-left-3">
+		<img src="img/boys.png" id="text_boy"><br>
+		<img src="img/devoch.png" id="devoch">
+	</div>
+	<div class="section section-left-4">
+		<img src="img/number.png" id="number"><br>
+		<img src="img/sayt.png" id="sayt">
+	</div>
+	</div>
+	 <div class="box-two">
+	 <div class="house-1">
+	 	<img src="img/house-1.png" id="houses">
+	 </div>
+	 <div class="house-2">
+	 	<img src="img/house-2.png" id="houses_2">
+	 </div>
+	</div>
+	</div>
+</div>
+</a>
+<script type="text/javascript">
+function globlas() {
+    //section_1
+
+    function up_logo() {
+        $('#logo').css({'transform' : 'translateY(0px)'}).css({'transition' : '1s'});
+        $('#houses').css({'transform' : 'translateY(0px)'}).css({'transition' : '0.7s'});
+    }
+    setTimeout(up_logo, 100);	
+
+    function up_micro() {
+        $('#micro').css({'transform' : 'translateY(0px)'}).css({'transition' : '1s'});
+    }
+    setTimeout(up_micro, 500);	
+
+    function up_line() {
+        $('#line_undo').css({'transform' : 'translateY(-9px)'}).css({'transition' : '0.5s'});
+    }
+    setTimeout(up_line, 800);
+    function up_text_undo() {
+        $('#text_undo').css({'transform' : 'translateY(-6px)'}).css({'transition' : '0.7s'});
+    }
+    setTimeout(up_text_undo, 1000);
+    
+    function up_text_undo_2() {
+        $('#text_undo_2').css({'transform' : 'translateY(-6px)'}).css({'transition' : '0.7s'});
+    }
+    setTimeout(up_text_undo_2, 1200);
+    
+    function transform_box_1() {
+        $('.section-left-1').css({'transform' : 'translateY(-300px)'}).css({'transition' : '2s'});
+    }
+    setTimeout(transform_box_1, 3000);
+
+    //section_1
+    //section_2_left
+    function transform_box_2() {
+        $('.section-left-2').css({'transform' : 'translateY(-100px)'}).css({'transition' : '1s'});
+    }
+    setTimeout(transform_box_2, 3050);
+    function transform_box_2_undo() {
+        $('#text_bottom').css({'transform' : 'translateY(-7px)'}).css({'transition' : '1s'});
+    }
+    setTimeout(transform_box_2_undo, 3450);
+
+    //section_2_left
+    //section_2_left_and_right_house
+    function transform_box_2_hide() {
+        $('.section-left-2').css({'transform' : 'translateY(-300px)'}).css({'transition' : '3s'});
+    }
+    setTimeout(transform_box_2_hide, 4500);
+    function transform_box_2_hide_house() {
+        $('.house-1').css({'transform' : 'translateY(-300px)'}).css({'transition' : '3s'});
+    }
+    setTimeout(transform_box_2_hide_house, 4700);
+   
+    //section_2_left_and_right_house
+    //section_2_left_and_right_house
+    function show_devoch_and_boy() {
+        $('.section-left-2').css({'transform' : 'translateY(-300px)'}).css({'transition' : '3s'});
+    }
+    setTimeout(show_devoch_and_boy, 4500);
+
+    //function transform_box_2_hide_house() {
+    //    $('.house-1').css({'transform' : 'translateY(-300px)'}).css({'transition' : '3s'});
+    //}
+    //setTimeout(transform_box_2_hide_house, 4700);
+    
+    //section_2_left_and_right_house
+    //section_3_left_and_right_house
+    function show_devoch_and_boy_2() {
+        $('.section-left-3').css({'transform' : 'translateY(-210px)'}).css({'transition' : '1s'});
+    }
+    setTimeout(show_devoch_and_boy_2, 4900);
+    function transform_box_2_show_house() {
+        //$('.house-2').css({'transform' : 'translateY(-120%)'}).css({'transition' : '1.4s'});
+        $('.house-2').addClass('trans');
+    }
+    setTimeout(transform_box_2_show_house, 4500);
+    //section_3_left_and_right_house
+    //devoch
+    function transform_devoch() {
+        $('#devoch').css({'transform' : 'translateY(0px)'}).css({'transition' : '1s'});
+    }
+    setTimeout(transform_devoch, 5300);
+    //devoch
+    //section_3_hidden
+    function section_3_hidden() {
+        $('.section-left-3').css({'transform' : 'translateY(-410px)'}).css({'transition' : '2s'});
+    }
+    setTimeout(section_3_hidden, 7300);
+    //section_3_hidden
+    //section_3_hidden
+    function section_4_show() {
+        $('.section-left-4').css({'transform' : 'translateY(-330px)'}).css({'transition' : '1s'});
+    }
+    setTimeout(section_4_show, 7700);
+    //section_3_hidden
+    function transform_sayt() {
+        $('#sayt').css({'transform' : 'translateY(0px)'}).css({'transition' : '1s'});
+    }
+    setTimeout(transform_sayt, 8100);
+}
+
+function reload() {
+	$('#logo').css({'transform' : 'translateY(120px)'}).css({'transition' : '0s'});
+	$('#houses').css({'transform' : 'translateY(250px)'}).css({'transition' : '0s'});
+	$('#micro').css({'transform' : 'translateY(100px)'}).css({'transition' : '0s'});
+	$('#line_undo').css({'transform' : 'translateY(80px)'}).css({'transition' : '0s'});
+	$('#text_undo').css({'transform' : 'translateY(80px)'}).css({'transition' : '0s'});
+	$('#text_undo_2').css({'transform' : 'translateY(80px)'}).css({'transition' : '0s'});
+	$('.section-left-1').css({'transform' : 'translateY(0px)'}).css({'transition' : '0s'});
+	$('.section-left-2').css({'transform' : 'translateY(0px)'}).css({'transition' : '0s'});
+    $('#text_bottom').css({'transform' : 'translateY(60px)'}).css({'transition' : '0s'});
+	$('.house-1').css({'transform' : 'translateY(0px)'}).css({'transition' : '0s'});
+	$('.section-left-3').css({'transform' : 'translateY(0px)'}).css({'transition' : '0s'});
+	//$('.house-2').css({'transform' : 'translateY(0px)'}).css({'transition' : '0s'});
+    $('.house-2').removeClass('trans');
+	$('#devoch').css({'transform' : 'translateY(60px)'}).css({'transition' : '0s'});
+	$('.section-left-4').css({'transform' : 'translateY(0px)'}).css({'transition' : '0s'});
+    $('#sayt').css({'transform' : 'translateY(60px)'}).css({'transition' : '0s'});
+}
+setInterval(reload, 12000)
+setTimeout(globlas, 0);
+setInterval(globlas, 12000);
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</body>
+</html>
