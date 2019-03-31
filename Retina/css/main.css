@@ -1,0 +1,734 @@
+/* $ --------------------------------- $ *\
+      SETTINGS/FONTS
+\* $ --------------------------------- $ */
+
+@font-face {font-family: RobotoCondensed; src: url(../fonts/RobotoCondensed.ttf)}
+@font-face {font-family: RobotoCondensed-Regular; src: url(../fonts/RobotoCondensed-Regular.ttf);}
+@font-face {font-family: RobotoCondensed-Italic; src: url(../fonts/RobotoCondensed-Italic.ttf);}
+@font-face {font-family: RobotoCondensed-Bold; src: url(../fonts/RobotoCondensed-Bold.ttf);}
+@font-face {font-family: RobotoCondensed-Light; src: url(../fonts/RobotoCondensed-Light.ttf);}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* $ ---------------------------------- $ *\
+      HEADER. LOGO BLOCK
+\* $ ---------------------------------- $ */
+
+#header { width: 100%; display: flex;}
+.header-logo-block { width: 70%; background-color: #e9eae2; }
+.header-logo-block-wrapper { display: flex; flex-wrap: wrap}
+
+.left-header-logo-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    margin-right: 70px;
+    margin-top: 50px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+.left-header-logo-block-text {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: "RobotoCondensed-Regular", sans-serif;
+    line-height: 1.1;
+}
+.left-header-logo-social-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.left-header-logo-social-block i {
+    font-size: 23px;
+    margin-right: 12px;
+    color: #7bcbc1;
+}
+.left-header-logo-social-block i:hover {
+    color: grey;
+    transition: 0.4s color;
+}
+
+/* $ ---------------------------------- $ *\
+      HEADER. ADDRESS BLOCK
+\* $ ---------------------------------- $ */
+
+.header-address-block {
+    position: relative;
+    width: 30%;
+    background: #7acec3 url(../img/line.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.menu-scroll {
+    margin: 0;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    background-color: #f8c255;
+}
+.menu-scroll a {
+    text-decoration: none;
+}
+.menu-scroll i {
+    font-size: 32px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.menu-button {
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+}
+.menu-button i {
+    font-size: 32px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+#menu-click {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: -110px;
+    list-style-type: none;
+    transition: 1s all ease;
+    z-index: 1;
+}
+.menu-click-item {
+    width: 20%;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8c255;
+    color: white;
+    font-family: "RobotoCondensed-Regular", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 1s all ease;
+}
+.menu-click-item:hover {
+    background-color: #e2ad42;
+    transition: 0.4s background-color;
+}
+#close-menu {
+    cursor: pointer;
+}
+
+.menu-button a { text-decoration: none; }
+.menu-button {
+    margin-top: 50px;
+    margin-left: 42%;
+}
+
+.header-address-block-address-column,
+.header-address-block-contact-column
+{ list-style-type: none; }
+
+.header-address-block-column-item {
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "RobotoCondensed-Regular", sans-serif;
+}
+.header-address-block-address-column {
+    margin-top: 90px;
+    margin-left: 10px;
+}
+.header-address-block-contact-column{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+/* $ ---------------------------------- $ *\
+      PROJECT SECTION. SETTINGS
+\* $ ---------------------------------- $ */
+
+#project-section                                   { width: 100%; }
+.top-project-containers                            { width: 100%; display: flex;}
+.left-project-section-container                    { width: 70%; display: flex; flex-direction: column; }
+.right-project-section-container                   { width: 30%; display: flex; flex-direction: column; }
+.left-project-top-line, .left-project-bottom-line  { display: flex; flex-wrap: wrap; }
+
+/* $ -------------------------------------------------------- $ *\
+      PROJECT SECTION. LEFT-PROJECT-TOP-LINE. PROJECTS BLOCK
+\* $ -------------------------------------------------------- $ */
+
+.projects-block {
+    position: relative;
+    width: 42%;
+    height: 487px;
+    background: #ebb240 url(../img/line.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.projects-block-title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 44px;
+    font-weight: 200;
+    font-family: "RobotoCondensed-Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60%;
+    right: 13%;
+}
+.projects-block-list {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    list-style-type: none;
+}
+.projects-block-list-item {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "RobotoCondensed-Regular", sans-serif;
+    font-size: 14px;
+}
+.projects-block-list-item:hover {
+    color: #000;
+    font-weight: 700;
+}
+.transition {
+    transition: 0.5s all;
+}
+.project-arrow {
+    position: absolute;
+    top: calc(26% + 13px);
+    left: calc(21% + 5px);
+}
+
+/* $ ---------------------------------- $ *\
+      PROJECT SECTION UNIVERSAL STYLES
+\* $ ---------------------------------- $ */
+
+.project-title {
+    text-transform: uppercase;
+    font-family: "RobotoCondensed-Light", sans-serif;
+    color: #333333;
+    font-weight: 500;
+    font-size: 25px;
+}
+.project-description-list {
+    padding: 0;
+    line-height: 0.9;
+    list-style-type: none;
+}
+.bold-project-description {
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 200;
+    font-size: 11.5px;
+    font-family: "RobotoCondensed", sans-serif;
+}
+.light-project-description {
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 200;
+    font-size: 11.5px;
+    font-family: "RobotoCondensed", sans-serif;
+}
+.viewproject-line {
+    display: flex;
+}
+.viewproject-arrow {
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+}
+.viewproject-text {
+    font-family: "RobotoCondensed-Light", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    height: 20px;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.viewproject-text:hover {
+    font-weight: bold;
+    transition: 0.4s font-weight;
+}
+.project-likes {
+    display: flex;
+    flex-direction: column;
+}
+.likes-counter {
+    font-family: "RobotoCondensed", sans-serif;
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.project-heart-fa {
+    width: 30px;
+    font-size: 21px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.white-text {
+    color: #fff;
+}
+.white-grey-text {
+    color: #e6e6e6;
+}
+
+/* $ -------------------------------------------------------- $ *\
+      PROJECT SECTION. LEFT-PROJECT-TOP-LINE. FONDUE-BLOCK
+\* $ -------------------------------------------------------- $ */
+
+.fondue-project-block {
+    width: 58%;
+    background-color: transparent;
+    height: 487px;
+}
+.fondue-project-block {
+    display: flex;
+}
+.fondue-content {
+    margin-top: 70px;
+    margin-left: 50px;
+}
+.fondue-title {
+    margin-left: 30px;
+}
+.fondue-list {
+    margin: 15px 0 0 30px;
+    padding: 0;
+}
+.fondue-viewproject-line {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.fondue-likes {
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+/* $ -------------------------------------------------------- $ *\
+      PROJECT SECTION. LEFT-PROJECT-BOTTOM-LINE. LOUIS-BLOCK
+\* $ -------------------------------------------------------- $ */
+
+.louis-project-block {
+    width: 27%;
+    height: 450px;
+    background-image: url(../img/louisxx.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.louis-title {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.louis-list {
+    margin: 15px 0 0 0;
+    padding-left: 30px;
+}
+.louis-viewproject-line {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.louis-likes {
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+/* $ -------------------------------------------------------- $ *\
+      PROJECT SECTION. LEFT-PROJECT-BOTTOM-LINE. P22-BLOCK
+\* $ -------------------------------------------------------- $ */
+
+.p22-project-block {
+    position: relative;
+    width: 73%;
+    height: 450px;
+    background-image: url(../img/chairs-p22.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.p22-title {
+    margin-top: 70px;
+    margin-left: 370px;
+}
+.p22-list {
+    padding: 0;
+    margin-left: 370px;
+}
+.p22-viewproject-line {
+    position: absolute;
+    left: 550px;
+    top: 75px;
+}
+.p22-likes {
+    position: absolute;
+    left: 610px;
+    top: 120px;
+}
+
+/* $ ----------------------------------------------------- $ *\
+      PROJECT SECTION. POTTER-BLOCK
+\* $ ----------------------------------------------------- $ */
+
+.potter-project-block {
+    display: flex;
+    height: 35.4%;
+    background-color: #dfe0d9;
+}
+.potter-title {
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.potter-content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.potter-description-title {
+    font-family: "RobotoCondensed-Light", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.potter-description {
+    font-family: "RobotoCondensed-Light", sans-serif;
+    color: #333333;
+    font-size: 12px;
+    margin-left: 30px;
+}
+.potter-viewproject-line {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.potter-likes {
+    margin-left: 90px;
+}
+.potter-project-block img {
+    margin-left: 2%;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+/* $ ---------------------------------------- $ *\
+      PROJECT SECTION. BOTTOM-RIGHT-PROJECT
+\* $ ---------------------------------------- $ */
+
+.bottom-right-project-container {
+    height: 75.4%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* $ ----------------------------------------------------- $ *\
+      PROJECT SECTION. BOTTOM-RIGHT-PROJECT. TABANO-BLOCK
+\* $ ----------------------------------------------------- $ */
+
+.tabano-project-block {
+    position: relative;
+    height: 64.5%;
+    background-color: #f7f7f3;
+}
+.tabano-main-image {
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.tabano-content-wrapper {
+    margin-left: 50px;
+}
+.tabano-viewproject-line {
+    position: absolute;
+    left: 220px;
+    top: 350px;
+}
+.tabano-likes {
+    position: absolute;
+    left: 370px;
+    top: 350px;
+}
+
+/* $ ----------------------------------------------------- $ *\
+      PROJECT SECTION. BOTTOM-RIGHT-PROJECT. FIJI-BLOCK
+\* $ ----------------------------------------------------- $ */
+
+.fiji-project-block {
+    height: 27%;
+    background-color: #fff;
+}
+.fiji-project-block {
+    display: flex;
+}
+.fiji-right-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.fiji-title {
+    margin-top: 15px;
+}
+.fiji-viewproject-line {
+    margin-top: 5px;
+}
+.fiji-likes {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+/* $ ----------------------------------------- $ *\
+      PROJECT SECTION. BOTTOM-PROJECT-SECTION
+\* $ ----------------------------------------- $ */
+
+.bottom-project-section {
+    display: flex;
+    width: 100%;
+}
+
+/* $ ------------------------------------------------------ $ *\
+      PROJECT SECTION. BOTTOM-PROJECT-SECTION. SESANN BLOCK
+\* $ ------------------------------------------------------ $ */
+
+.sesann-project-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: #fff;
+    height: 290px;
+}
+.sesann-main-image {
+    width: 470px;
+    transform: scale(0.95);
+    margin-top: 10px;
+    margin-left: 130px;
+}
+.sesann-right-content {
+    margin-left: 150px;
+}
+.sesann-list {
+    margin: 5px 0 0 0;
+}
+.sesann-viewproject-line {
+    position: absolute;
+    left: 350px;
+    top: 205px;
+}
+.sesann-likes {
+    position: absolute;
+    left: 520px;
+    top: 205px;
+}
+
+/* $ ------------------------------------------------------- $ *\
+      PROJECT SECTION. BOTTOM-PROJECT-SECTION. ALESSI BLOCK
+\* $ ------------------------------------------------------- $ */
+
+.alessi-project-block {
+    position: relative;
+    width: 20%;
+    background: #cecece;
+    height: 290px;
+    overflow: hidden;
+    display: flex;
+}
+.alessi-content {
+    margin-top: 75px;
+    margin-left: 5px;
+}
+.alessi-viewproject-line {
+    position: absolute;
+    top: 175px;
+    left: 120px;
+}
+.alessi-likes {
+    position: absolute;
+    top: 215px;
+    left: 180px;
+}
+
+/* $ --------------------------------------------------------- $ *\
+      PROJECT SECTION. BOTTOM-PROJECT-SECTION. TIMELINE BLOCK
+\* $ --------------------------------------------------------- $ */
+
+.timeline-project-block {
+    width: 30%;
+    background: #ebb240;
+    height: 290px;
+}
+.line-block {
+    position: relative;
+    width: 60%;
+    height: 290px;
+    background-image: url(../img/line.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.timeline-title {
+    text-transform: uppercase;
+    color: #000;
+    font-family: "RobotoCondensed-Regular", sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+.timeline-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 70px;
+    left: 80px;
+}
+.timeline-list-item {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "RobotoCondensed-Regular", sans-serif;
+    font-size: 13px;
+}
+.timeline-list-item:hover {
+    color: #000;
+    font-weight: 700;
+}
+.timeline-arrow {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+}
+
+/* $ ------------------------------ $ *\
+      STUDIO SECTION. STUDIO-BLOCK
+\* $ ------------------------------ $ */
+
+#studio-section {
+    display: flex;
+}
+.studio-block {
+    position: relative;
+    width: 29.3%;
+    height: 487px;
+    background: #ff9b6d url(../img/line.png);
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.studio-description-container {
+    width: 70.7%;
+    background-color: #e9eae2;
+}
+.studio-description-content-wrapper {
+    display: flex;
+}
+
+/* Left-column */
+
+.left-studio-description-column {
+    margin-top: 70px;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: column;
+}
+.bold-paragraphs, .light-paragraphs {
+    display: flex;
+    flex-direction: column;
+}
+.light-paragraphs {
+    margin-top: 20px;
+}
+
+/* Bold paragraphs */
+
+.studio-description-left-column-first-bold-paragraph, .studio-description-left-column-second-bold-paragraph {
+    font-family: "RobotoCondensed-Italic", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.studio-description-left-column-second-bold-paragraph {
+    margin-top: 20px;
+}
+
+/* Light paragraphs */
+
+.studio-description-left-column-light-paragraph {
+    font-family: "RobotoCondensed-Light", sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Right column */
+
+.right-studio-description-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+.description-awards-block {
+    text-transform: uppercase;
+    font-family: "RobotoCondensed-Bold", sans-serif;
+    font-size: 14px;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    margin-top: 30px;
+}
+.awards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.awards-column {
+    font-family: "RobotoCondensed-Regular", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* $ ------------------- $ *\
+      DESIGNERS-SECTION
+\* $ ------------------- $ */
+
+.designers-section {
+    margin: 0;
+    width: 100%;
+    height: 360px;
+    background-color: #e9eae2;
+}
+.staff-block {
+    margin-top: 50px;
+    margin-left: 130px;
+    display: flex;
+    flex-direction: column;
+}
+.staff-title {
+    font-family: "RobotoCondensed-Regular", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.staff-paragraph {
+    font-family: "RobotoCondensed-Light", sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+
+
+
