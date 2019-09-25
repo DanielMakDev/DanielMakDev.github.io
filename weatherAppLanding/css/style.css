@@ -1,0 +1,745 @@
+
+body, html {
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	font-family: 'Ubuntu' , sans-serif;
+	font-size: 50px;
+	color:#fff;
+}
+
+h2 {
+	font-family: 'Ubuntu' , sans-serif;
+	font-size: 30px;
+	color:#648CFF;
+}
+
+h3 {
+	font-family: 'Ubuntu' , sans-serif;
+	font-size: 20px;
+	color:#353854;
+}
+
+p {
+	font-family: 'Ubuntu' , sans-serif;
+	font-size: 16px;
+}
+
+button {
+	font-family: 'Ubuntu' , sans-serif;
+	font-weight: bold;
+}
+
+.perfectFeatures p , .widgets__header p , .screenshots__header p , .reviews__header p {
+	color:#C6C6C6;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+
+/* header */
+
+header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin:0 10%;
+}
+
+.nav__header  {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space;
+	padding:0;
+	list-style-type: none;
+}
+
+.nav__header a {
+	display: block;
+	text-decoration: none;
+	color:#fff;
+	padding:40px 50px;
+	font-family: 'Ubuntu' , sans-serif;
+	font-size: 17px;
+}
+
+.nav__header a:hover , header .social a:hover {
+	color:#31437C;
+	transition: .3s all ease;
+}
+
+.social {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.social a {
+	display: block;
+	text-decoration: none;
+	color:#fff;
+	padding:25px 15px;
+	font-size: 22px;
+}
+
+
+/* getTheMost */
+
+.getTheMostWrapper {
+	background-image: url(../img/bg__getTheMost.png);	
+	background-size: cover   ;
+	background-repeat: no-repeat;
+	padding-bottom: 150px;
+
+}
+
+.getTheMost {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin:0 10%;
+	padding-top: 100px;
+}
+
+
+.getTheMost p {
+	color:#fff;
+	line-height: 2rem;
+}
+
+.getTheMost .buttons {
+	margin-top: 30px;
+}
+
+.getTheMost .btn__download , .getTheMost .btn__features {
+	outline: 0;
+	border:0;
+	border-radius: 5px;
+	color:#fff;
+	font-size: 16px;
+	padding:15px 30px;
+	margin-right:5px;
+	cursor:pointer;
+}
+
+.getTheMost .btn__download {
+	background-color: #FC6A42;
+}
+
+.getTheMost .btn__download:hover {
+	background-color: #EA633D;
+	transition: .3s all ease;
+}
+
+.getTheMost .btn__features {
+	background-color: #4466C9;
+}
+
+.getTheMost .btn__features:hover {
+	background-color:#3E5CB7;
+	transition: .3s all ease;
+}
+
+.getTheMost__img {
+	position: relative;	
+}
+
+.getTheMost__img img {
+	width:100%;
+}
+
+.getTheMost__img .circle__sunny {
+	position: absolute;
+	left:-110px;
+	top:45%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #FC6A42;
+	border-radius: 50%;
+	color:#fff;
+  	width: 44px;
+  	height: 44px;
+  	padding: 38px;
+  	border:2px solid  #FC6A42;
+	text-align: center;
+	font-family: 'Ubuntu' , sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.circle__london {
+	position: absolute;
+	left: 360px;
+	top:40%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #4466C9;
+	border-radius: 50%;
+	color:#fff;
+  	width: 46px;
+  	height: 46px;
+  	padding: 50px;
+  	border:2px solid  #4466C9;
+	text-align: center;
+	font-family: 'Ubuntu' , sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+.circle__rio {
+	position: absolute;
+	left:330px;
+	top:94%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#F0E05F;
+	border-radius: 50%;
+	color:#5B81EC;
+  	width: 16px;
+  	height: 16px;
+  	padding: 25px;
+  	border:2px solid  #F0E05F;
+	text-align: center;
+	font-family: 'Ubuntu' , sans-serif;
+	font-weight: bold;
+	font-size: 18px;	
+}
+
+.circle__temperature {
+	position: absolute;
+	left:320px;
+	top:5%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#FFFFFF;
+	border-radius: 50%;
+	color:#5B81EC;
+  	width: 16px;
+  	height: 16px;
+  	padding: 25px;
+  	border:2px solid  #FFFFFF;
+	text-align: center;
+	font-family: 'Ubuntu' , sans-serif;
+	font-weight: bold;
+	font-size: 20px;		
+}
+
+ /* perfectFeatures */
+
+.perfectFeatures {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+	justify-content: center;
+	padding:60px 0;
+	margin:0 10%;
+}
+
+
+.perfectFeatures__header {
+	text-align: center;
+}
+
+.perfectFeatures__content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.perfectFeatures__content .item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.item .icon {
+	padding:25px;
+}
+
+/* widgets */
+
+.widgets {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:0 10%;
+}
+
+.widgets__header {
+	text-align: center;
+}
+
+
+.widgets__slider {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.slidesWrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.slide {
+	transform: scale(0.9);
+	transition: .5s all ease;
+}
+
+.active {
+	transform: scale(1);
+}
+
+.btnPrev , .btnNext {
+	position: absolute;
+	top:42%;
+	font-size: 50px;
+	cursor:pointer;
+	color: #C3CFE5;
+}
+
+.btnPrev {
+	left:-50px;
+}
+
+.btnNext {
+	right:-50px;
+}
+
+
+/* screenshots */
+
+.screenshots {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	margin:0 10%;
+}
+
+
+.screenshots__header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.screenshots__content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction:column;	
+}
+
+.screenshots__content p {
+	line-height: 25px;
+}
+
+.screenshots__content .item {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	padding:100px 0;
+}
+
+.item__img , .item__text {
+	padding:0 100px;
+}
+
+.screenshots .item__img img {
+	width:100%;
+}
+
+.stats {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.stats__item {	
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: 50%;
+	color:#D4DBEC;
+  	width: 14px;
+  	height: 14px;
+  	padding: 18px;
+/*  	border:2px solid  #D4DBEC;*/
+	text-align: center;
+	font-family: 'Ubuntu' , sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+-webkit-box-shadow: 6px 3px 31px -16px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 3px 31px -16px rgba(0,0,0,0.75);
+box-shadow: 6px 3px 31px -16px rgba(0,0,0,0.75);
+}
+
+.statPercent {
+	z-index: 3;
+	position: relative;
+	
+}
+
+.statTemperature {
+	position: relative;
+	left:-10px;
+	z-index: 2;
+}
+
+.statRainy {
+	position: relative;
+	left:-20px;
+	z-index: 1;
+} 
+
+
+/* reviews */
+
+.reviews {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	margin:0 10%;
+}
+
+.reviews__header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.reviews__content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.reviews__content p {
+	font-size: 19px;
+	line-height: 35px;
+}
+
+.reviews__content span {
+	font-family: 'Ubuntu' , sans-serif;
+	font-size: 16px;
+}
+
+.reviews__content i {
+	font-size: 45px;
+	color:#648CFF;
+}
+
+.reviews__content .review {
+	margin-bottom: 70px;
+}
+
+
+/* download */
+
+.download {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: ;
+	align-items: center;
+	background-image: url(../img/bg__footer.png);
+	background-size: cover;
+	background-position: center;
+	padding:80px 0;
+}
+
+.download__content {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin:0 10%;
+}
+
+.download__content h2 {
+	color:#fff;
+}
+
+.download__content p {
+	color:#fff;
+}
+
+.downloadBtns {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-top: 30px;
+}
+
+
+.downloadBtns__appStore {
+	margin-right: 15px;
+}
+
+
+/* footer */
+
+footer {
+	background-color: #353854;
+}
+
+.footerInner {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin:0 10%;
+}
+
+.nav__footer {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space;
+	padding:0;
+	list-style-type: none;
+}
+
+.nav__footer a {
+	display: block;
+	text-decoration: none;
+	color:#fff;
+	padding:40px 50px;
+	font-family: 'Ubuntu' , sans-serif;
+	font-size: 17px;
+}
+
+.nav__footer a:hover , footer .social a:hover {
+	color:#8E92BC;
+	transition: .3s all ease;
+}
+
+.copyrights {
+	background-color: #353854;
+	text-align: center;
+	padding:60px 0;
+	border-top:1px solid #51557F;
+}
+
+.copyrights p {
+	color:#51557F;
+	margin:0;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1105px) {
+	
+	header {
+		flex-direction: column;
+		padding:30px;
+	}
+
+	.getTheMost {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.getTheMost__text {
+		margin-bottom: 50px;
+	}
+
+
+	.perfectFeatures__content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	.widgets__slider img {
+		width:100%;
+	}
+
+
+	.screenshots__content .item {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.screenshots__content .item__img , .screenshots__content .item__text {
+		margin-bottom: 50px;
+	}
+
+
+	.reviews__content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footerInner {
+		flex-direction: column;
+		padding:30px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+
+	.btn__download {
+		margin-bottom: 20px;
+	}
+
+	.nav__header , .nav__footer{
+		flex-direction: column;
+	}
+
+
+	.getTheMost__text .buttons {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.btn__download {
+		margin-bottom: 20px;
+	}
+
+	.circle__sunny , .circle__london , .circle__rio, .circle__temperature {
+		display: none !important;
+	}
+
+
+	.perfectFeatures__content .item {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.btnPrev {
+		left:0;
+	}
+
+	.btnNext {
+		right:0;
+	}
+
+	.screenshots .item__img , .screenshots .item__text {
+		padding:0;
+	}
+	
+	.downloadBtns {
+		flex-direction: column;
+	}
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
